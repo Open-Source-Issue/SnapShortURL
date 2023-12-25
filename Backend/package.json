@@ -4,7 +4,7 @@
   "description": "Streamlined URL Shortening for the Modern Web",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "keywords": [
     "javascript",
@@ -16,6 +16,11 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "mongoose": "^8.0.3"
+    "mongoose": "^8.0.3",
+    "nanoid": "^5.0.4",
+    "shortid": "^2.2.16"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
   }
 }
