@@ -4,6 +4,7 @@ const URL = require('../Models/SnapShortURL.models.js');
 async function handleShortURLGenrated(req, res) {
 
     const shortID = shortid();
+
     const body = req.body;
 
     if (!body.URL) return res.status(400).json({ error: 'Url is required..' })
