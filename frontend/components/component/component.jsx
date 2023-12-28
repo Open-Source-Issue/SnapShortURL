@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
+import Image from "next/image"
 import { CardTitle, CardDescription, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
 
 export function Component() {
@@ -46,7 +47,7 @@ export function Component() {
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-8 text-center">Loved by big and small brands everywhere</h2>
           <div className="flex justify-center items-center space-x-4 mb-16">
-            <img
+            <Image
               alt="Brand Logo"
               height="24"
               src="/placeholder.svg"
@@ -55,7 +56,7 @@ export function Component() {
                 objectFit: "cover",
               }}
               width="100" />
-            <img
+            <Image
               alt="Brand Logo"
               height="24"
               src="/placeholder.svg"
@@ -64,7 +65,7 @@ export function Component() {
                 objectFit: "cover",
               }}
               width="100" />
-            <img
+            <Image
               alt="Brand Logo"
               height="24"
               src="/placeholder.svg"
@@ -73,7 +74,7 @@ export function Component() {
                 objectFit: "cover",
               }}
               width="100" />
-            <img
+            <Image
               alt="Brand Logo"
               height="24"
               src="/placeholder.svg"
@@ -82,7 +83,7 @@ export function Component() {
                 objectFit: "cover",
               }}
               width="100" />
-            <img
+            <Image
               alt="Brand Logo"
               height="24"
               src="/placeholder.svg"
