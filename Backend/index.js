@@ -6,9 +6,11 @@ require('dotenv').config();
 
 const PORT = process.env.PORT || 3000;
 
+const MongoURL = process.env.MongoURL;
+
 const URL = require('./Models/SnapShortURL.models');
 
-connecttoMongoDB('mongodb://127.0.0.1:27017/SnapShortURL').then((data) => console.log(`database connected successfully ${data}`)).catch((err) => console.log(`${err}`))
+connecttoMongoDB(MongoURL).then((data) => console.log(`database connected successfully ${data}`)).catch((err) => console.log(`${err}`))
 
 const app = express();
 
