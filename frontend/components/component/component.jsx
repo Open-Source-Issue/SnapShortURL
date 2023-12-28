@@ -13,7 +13,7 @@ export function Component() {
           <p className="mb-8">
             Create short links, QR Codes, and Link-in-bio pages. Share them anywhere.
             <br />
-            Track what's working, and what's not. All inside the snapshorturl Connections Platform.
+            Track whats working, and whats not. All inside the snapshorturl Connections Platform.
           </p>
           <div className="flex justify-center space-x-4">
             <Button variant="outline">Short link</Button>
@@ -187,8 +187,8 @@ export function Component() {
             <ChevronLeftIcon className="h-6 w-6 text-gray-500" />
             <div className="max-w-2xl">
               <blockquote className="italic text-lg mb-4">
-                "Our goal was to implement a system that would not interrupt the gameplay experience when a new update
-                was announced, and we found QR Codes to be the perfect answer."
+                Our goal was to implement a system that would not interrupt the gameplay experience when a new update
+                was announced, and we found QR Codes to be the perfect answer.
               </blockquote>
               <p className="text-sm">Juan Zacarias – Game Product Manager, Motive Studios EA</p>
               <div className="flex justify-center mt-4">
