@@ -1,19 +1,18 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import { CardTitle, CardDescription, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
+import ShortURL from "../ui/ShortURL"
 
 export function Component() {
   return (
     <div key="1" className="bg-white text-gray-700 pt-10">
       <main>
         <section className="container mx-auto px-4 py-16 text-center">
-          <h1 className="text-5xl font-bold mb-4">Make every <span className="text-primary">connection</span> count</h1>
+          <h1 className="text-5xl font-bold mb-4">Connections with <span className="text-primary">Maximum</span> Impact</h1>
           <p className="mb-8">
-            Create short links, QR Codes, and Link-in-bio pages. Share them anywhere.
+            Generate concise links, QR codes, and Link-in-bio pages with SnapshortURL.
             <br />
-            Track whats working, and whats not. All inside the snapshorturl Connections Platform.
+            Share seamlessly, analyze performance, and optimize online presence effortlessly on the Connections Platform.
           </p>
           <div className="flex justify-center space-x-4">
             <Button variant="outline">Short link</Button>
@@ -21,36 +20,14 @@ export function Component() {
             <Button variant="outline">Link-in-bio</Button>
           </div>
         </section>
-        <section className="bg-gray-100 py-16">
-          <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-4 text-center">Shorten a long link</h2>
-            <div
-              className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
-              <Input placeholder="Example: http://super-long-link.com/shorten-it" />
-              <div className="flex items-center">
-                <span className="bg-gray-200 px-3 py-2 rounded-l">bit.ly</span>
-                <Input placeholder="example: favorite-link" />
-              </div>
-              <Button>Sign up and get your link</Button>
-            </div>
-            <p className="text-center mt-4">End your link with words that will make it unique</p>
-            <div className="mt-8 text-center">
-              <p className="font-bold">No credit card required. Your free plan includes:</p>
-              <div className="flex justify-center space-x-4 mt-4">
-                <Badge>Short links</Badge>
-                <Badge>QR Codes</Badge>
-                <Badge>Link-in-bio page</Badge>
-              </div>
-            </div>
-          </div>
-        </section>
+        <ShortURL />
         <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Loved by big and small brands everywhere</h2>
-          <div className="flex justify-center items-center space-x-4 mb-16">
+          <h2 className="text-xl font-extrabold mb-8 text-center">Embraced by both large enterprises and small businesses globally.</h2>
+          <div className="flex justify-center items-center space-x-3 mb-32">
             <Image
               alt="Brand Logo"
-              height="24"
-              src="/placeholder.svg"
+              height="30"
+              src="/Anorch.svg"
               style={{
                 aspectRatio: "100/24",
                 objectFit: "cover",
@@ -59,7 +36,7 @@ export function Component() {
             <Image
               alt="Brand Logo"
               height="24"
-              src="/placeholder.svg"
+              src="/aromaf.svg"
               style={{
                 aspectRatio: "100/24",
                 objectFit: "cover",
@@ -68,7 +45,7 @@ export function Component() {
             <Image
               alt="Brand Logo"
               height="24"
-              src="/placeholder.svg"
+              src="/humbbble.svg"
               style={{
                 aspectRatio: "100/24",
                 objectFit: "cover",
@@ -77,7 +54,7 @@ export function Component() {
             <Image
               alt="Brand Logo"
               height="24"
-              src="/placeholder.svg"
+              src="/mediora.svg"
               style={{
                 aspectRatio: "100/24",
                 objectFit: "cover",
@@ -86,17 +63,16 @@ export function Component() {
             <Image
               alt="Brand Logo"
               height="24"
-              src="/placeholder.svg"
+              src="/interia.svg"
               style={{
                 aspectRatio: "100/24",
                 objectFit: "cover",
               }}
               width="100" />
           </div>
-          <h2 className="text-3xl font-bold mb-8 text-center">The snapshorturl Connections Platform</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">The SnapshortURL Connections Platform</h2>
           <p className="text-center mb-16">
-            All the products you need to build brand connections, manage links and QR Codes, and connect with audiences
-            everywhere, in a single unified platform.
+            A unified platform for building brand connections, managing links and QR Codes, and connecting with audiences everywhere. Simplify your processes.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="w-full">
@@ -142,7 +118,7 @@ export function Component() {
               <CardHeader>
                 <CardTitle>Link-in-bio</CardTitle>
                 <CardDescription>
-                  snapshorturl Link-in-bio, powered by snapshorturl Link Management, helps you curate, package and track your best
+                  SnapshortURL Link-in-bio, powered by SnapshortURL Link Management, helps you curate, package and track your best
                   links.
                 </CardDescription>
               </CardHeader>
@@ -182,7 +158,7 @@ export function Component() {
           </div>
         </section>
         <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">What snapshorturl customers are saying</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">What SnapshortURL customers are saying</h2>
           <div className="flex justify-center items-center space-x-4 mb-16">
             <ChevronLeftIcon className="h-6 w-6 text-gray-500" />
             <div className="max-w-2xl">
@@ -203,8 +179,8 @@ export function Component() {
           </div>
         </section>
         <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">Frequently asked questions</h2>
-          <div className="space-y-4">
+          <h2 className="text-3xl font-bold mb-16 text-center">Frequently asked questions</h2>
+          <div className="space-y-9 ml-96">
             <details>
               <summary className="font-bold cursor-pointer">What is a URL shortener?</summary>
               <p>
@@ -234,9 +210,9 @@ export function Component() {
               </p>
             </details>
             <details>
-              <summary className="font-bold cursor-pointer">Why choose snapshorturl?</summary>
+              <summary className="font-bold cursor-pointer">Why choose SnapshortURL?</summary>
               <p>
-                snapshorturl offers robust link management features, detailed analytics, and a wide range of integrations,
+                SnapshortURL offers robust link management features, detailed analytics, and a wide range of integrations,
                 making it a top choice for businesses and individuals.
               </p>
             </details>
@@ -244,8 +220,8 @@ export function Component() {
         </section>
         <section className="bg-primary text-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-8">More than a free link shortener</h2>
-            <Button variant="secondary">Get Started</Button>
+            <h2 className="text-3xl font-bold mb-8">Beyond just a free URL shortening service</h2>
+            <Button className="bg-white text-black">Get Started</Button>
           </div>
         </section>
       </main>

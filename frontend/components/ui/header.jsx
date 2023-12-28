@@ -33,7 +33,7 @@ function NavBar() {
                     </div>
                     <div>
                         <div
-                            className={`flex-1 justify-self-center pb-3 mt-8 lg:block lg:pb-0 lg:mt-0 ${navbar ? 'p-12 lg:p-0 block' : 'hidden'
+                            className={`flex-1 justify-self-center pb-0 mt-0 lg:block lg:pb-0 lg:mt-0 ${navbar ? 'p-12 lg:p-0 block' : 'hidden'
                                 }`}
                         >
                             <ul className="h-screen lg:h-auto items-center justify-center lg:flex ">

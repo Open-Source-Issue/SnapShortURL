@@ -1,6 +1,10 @@
 const express = require('express');
 const URLRoutes = require('./Routes/SnapShortURL.Route');
 const { connecttoMongoDB } = require('./connect')
+require('dotenv').config();
+
+
+const PORT = process.env.PORT || 3000;
 
 const URL = require('./Models/SnapShortURL.models');
 
@@ -26,8 +30,8 @@ app.get('/:shortID', async (req, res) => {
                 },
             },
         })
-        res.redirect(entry.redirectURL);
+    res.redirect(entry.redirectURL);
 })
 
 
-app.listen(8081, () => console.log('Server Running...'))
+app.listen(PORT, () => console.log(`Server Running...${PORT}`))
