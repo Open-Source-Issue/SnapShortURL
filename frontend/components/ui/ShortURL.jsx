@@ -10,20 +10,19 @@ export default function ShortURL() {
 
     async function fetchData(URL) {
         try {
-            const response = await fetch('http://localhost:5800', {
-                method: "POST",
+            const response = await fetch('http://localhost:8080/url', {
+                method: 'POST',
                 headers: {
-                    "Content-type": "application/json"
+                    'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ url: URL })  
-                // Assuming you're sending an object with a 'url' property
+                body: JSON.stringify({
+                    "URL": URL
+                })
             });
-
-            console.log(response)
 
             if (response.ok) {
                 const data = await response.json();
-                setResult(data.shortUrl);
+                setResult(`localhost:8080/${data.id}`);
             } else {
                 console.error('Error:', response.status, response.statusText);
             }
@@ -39,9 +38,9 @@ export default function ShortURL() {
                 <h2 className="text-3xl font-bold mb-4 text-center">
                     Create a concise link.</h2>
                 <div
-                    className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
+                    className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-1">
                     <Input placeholder="Example: http://super-long-link.com/shorten-it" onChange={(e) => setURL(e.target.value)} value={URL} />
-                    <Button onClick={() => fetchData()}>Sign up and get your link</Button>
+                    <Button onClick={() => fetchData(URL)}>Sign up and get your link</Button>
 
                     <div className="flex items-center">
                         <span className="bg-gray-200 px-3 py-2 rounded-l">bit.ly</span>

@@ -1,7 +1,9 @@
 const express = require('express');
+const cors = require('cors');
 const URLRoutes = require('./Routes/SnapShortURL.Route');
 const { connecttoMongoDB } = require('./connect')
 require('dotenv').config();
+
 
 
 const PORT = process.env.PORT || 3000;
@@ -13,6 +15,8 @@ const URL = require('./Models/SnapShortURL.models');
 connecttoMongoDB(MongoURL).then((data) => console.log(`database connected successfully ${data}`)).catch((err) => console.log(`${err}`))
 
 const app = express();
+
+app.use(cors());
 
 app.use(express.json())
 
