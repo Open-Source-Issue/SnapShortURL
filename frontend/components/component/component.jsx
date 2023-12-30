@@ -5,11 +5,11 @@ import ShortURL from "../ui/ShortURL"
 
 export function Component() {
   return (
-    <div key="1" className="bg-white text-gray-700 pt-10">
+    <div key="1" className="bg-white text-gray-700 pt-10 ">
       <main>
-        <section className="container mx-auto px-4 py-16 text-center">
-          <h1 className="text-5xl font-bold mb-4">Connections with <span className="text-primary">Maximum</span> Impact</h1>
-          <p className="mb-8">
+        <section className="container mx-auto px-10 pt-24 mb-10 text-center">
+          <h1 className="text-4xl font-bold mb-4">Connections with <span className="text-primary">Maximum</span> Impact</h1>
+          <p className="mb-8 md:text-[15px]">
             Generate concise links, QR codes, and Link-in-bio pages with SnapshortURL.
             <br />
             Share seamlessly, analyze performance, and optimize online presence effortlessly on the Connections Platform.
@@ -23,7 +23,7 @@ export function Component() {
         <ShortURL />
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-xl font-extrabold mb-8 text-center">Embraced by both large enterprises and small businesses globally.</h2>
-          <div className="flex justify-center items-center space-x-3 mb-32">
+          <div className="flex sm:space-x-0 justify-center items-center space-x-2 mb-32">
             <Image
               alt="Brand Logo"
               height="30"
@@ -74,7 +74,7 @@ export function Component() {
           <p className="text-center mb-16">
             A unified platform for building brand connections, managing links and QR Codes, and connecting with audiences everywhere. Simplify your processes.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="lg:ml-32 lg:mr-32 grid grid-cols-1 lg:grid-cols-3 gap-8">
             <Card className="w-full">
               <CardHeader>
                 <CardTitle>URL Shortener</CardTitle>
@@ -84,7 +84,7 @@ export function Component() {
                 </CardDescription>
               </CardHeader>
               <CardContent>
-                <ul className="list-disc pl-5 space-y-2">
+                <ul className="list-disc pl-1 space-y-1">
                   <li>URL shortening at scale</li>
                   <li>Custom links with your brand</li>
                   <li>URL redirects</li>
@@ -139,7 +139,7 @@ export function Component() {
         </section>
         <section className="bg-gray-100 py-16">
           <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">500K</h2>
               <p>global paying customers</p>
             </div>
@@ -151,7 +151,7 @@ export function Component() {
               <h2 className="text-3xl font-bold">10B</h2>
               <p>connections (clicks & scans) monthly</p>
             </div>
-            <div className="text-center mb-16">
+            <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">800+</h2>
               <p>app integrations</p>
             </div>
@@ -180,7 +180,7 @@ export function Component() {
         </section>
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-16 text-center">Frequently asked questions</h2>
-          <div className="space-y-9 ml-96">
+          <div className="space-y-9 sm:ml-0 ml-96">
             <details>
               <summary className="font-bold cursor-pointer">What is a URL shortener?</summary>
               <p>
