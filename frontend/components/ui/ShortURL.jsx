@@ -42,11 +42,11 @@ export default function ShortURL() {
 
     return (
         <section className="bg-gray-100 py-16">
-            <div className="container mx-auto lg:px-40 md:px-20">
+            <div className="container mx-auto lg:px-40 md:px-20 sm:px-0">
                 <h2 className="text-3xl font-bold mb-4 text-center">
                     Create a concise link.</h2>
                 <div
-                    className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-2">
+                    className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-2 sm:space-x-0">
                     <Input placeholder="Example: http://super-long-link.com/shorten-it" onChange={(e) => setURL(e.target.value)} value={URL} />
                     <Button onClick={() => fetchData(URL)}>Sign up and get your link</Button>
                     <div className="flex items-center">

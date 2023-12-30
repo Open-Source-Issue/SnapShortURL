@@ -28,7 +28,7 @@ function NavBar() {
                             {/* HAMBURGER BUTTON FOR MOBILE */}
                             <div className="lg:hidden">
                                 <button
-                                    className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                                    className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border border-none "
                                     onClick={() => setNavbar(!navbar)}
                                 >
                                     {navbar ? (
@@ -47,30 +47,32 @@ function NavBar() {
                                 }`}
                         >
                             <ul className="h-screen lg:h-auto items-center justify-center lg:flex ">
-                                <li className="pb-6 text-xl text-black py-2 lg:px-6 text-center border-b-2 lg:border-b-0  hover:bg-purple-900  border-purple-900  lg:hover:text-primary lg:hover:bg-transparent">
+                                <li className="pb-6 lg:text-2xl md:text-3xl text-black py-2 lg:px-6 text-center lg:border-b-0  hover:text-primary transition-colors ease-in-out duration-500 lg:hover:text-primary lg:hover:bg-transparent">
                                     <Link href="/product" onClick={() => setNavbar(!navbar)}>
                                         Product
                                     </Link>
                                 </li>
-                                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 lg:border-b-0  hover:bg-purple-600  border-purple-900  lg:hover:text-primary lg:hover:bg-transparent">
+                                <li className="pb-6 lg:text-2xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
                                     <Link href="/pricing" onClick={() => setNavbar(!navbar)}>
                                         Pricing
                                     </Link>
                                 </li>
-                                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 lg:border-b-0  hover:bg-purple-600  border-purple-900  lg:hover:text-primary lg:hover:bg-transparent">
+                                <li className="pb-6 lg:text-2xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
                                     <Link href="/resources" onClick={() => setNavbar(!navbar)}>
                                         Resources
                                     </Link>
                                 </li>
-                                <li className="pb-6 text-xl text-black py-2 px-6 text-center  border-b-2 lg:border-b-0  hover:bg-purple-600  border-purple-900  lg:hover:text-primary lg:hover:bg-transparent">
+                                <li className="pb-6 lg:text-2xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
                                     <Link href="/products" onClick={() => setNavbar(!navbar)}>
-                                        Products
+                                        Login
                                     </Link>
                                 </li>
-                                <Button className="ml-4">Sign Up Free</Button>
-                                <Button className="ml-4" >
-                                    Get a Quote
-                                </Button>
+                                <div className='flex justify-center align-middle'>
+                                    <Button className="ml-4">Sign Up Free</Button>
+                                    <Button className="ml-4" >
+                                        Get a Quote
+                                    </Button>
+                                </div>
                             </ul>
                         </div>
                     </div>

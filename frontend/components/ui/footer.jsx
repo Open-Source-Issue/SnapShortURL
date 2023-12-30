@@ -1,17 +1,19 @@
+import Image from "next/image"
+
 export default function Component() {
     return (
         <footer className="bg-[#fff] text-black p-10">
             <div className="container mx-auto grid grid-cols-2 lg:grid-cols-6 gap-8">
                 <div>
-                    <h2 className="text-2xl font-bold mb-4">xMoney</h2>
-                    <p className="mb-4">The world's digital payments network for all things money</p>
-                    <img
+                    <h2 className="lg:text-2xl md:text-2xl font-bold mb-2 sm:text-xl">SnapshortURL</h2>
+                    <p className="mb-4">Streamlined URL Shortening for the Modern Web</p>
+                    <Image
                         alt="Great Place to Work Certified"
                         className="mb-6 pl-0"
                         height="200"
                         src="/SnapshortURL.svg"
                         style={{
-                            aspectRatio: "120/40    ",
+                            aspectRatio: "120/40",
                             objectFit: "cover",
                         }}
                         width="200"
@@ -29,55 +31,64 @@ export default function Component() {
                 <div>
                     <h3 className="font-semibold mb-3">Products</h3>
                     <ul>
-                        <li className="mb-2">Pay request</li>
-                        <li className="mb-2">Crypto Pay</li>
-                        <li className="mb-2">Fiat Pay</li>
-                        <li className="mb-2">Pay Links</li>
+                        <li className="mb-2">URL Shortener</li>
+                        <li className="mb-2">QR Codes</li>
+                        <li className="mb-2">Link-in-bio</li>
                     </ul>
                 </div>
                 <div>
                     <h3 className="font-semibold mb-3">Solutions</h3>
+
                     <ul>
-                        <li className="mb-2">Shops & Ecommerce</li>
-                        <li className="mb-2">Travel</li>
-                        <li className="mb-2">Digital Nomad</li>
+                        <li className="mb-2"> Social Media</li>
+                        <li className="mb-2">Digital Marketing</li>
+                        <li className="mb-2">Customer Service For Developers</li>
                     </ul>
                 </div>
+
                 <div>
-                    <h3 className="font-semibold mb-3">Need more information?</h3>
+                    <h3 className="font-semibold mb-3">Features</h3>
                     <ul>
-                        <li className="mb-2">xMoney Announcements</li>
-                        <li className="mb-2">MultiversX Announcements</li>
-                        <li className="mb-2">Customer Support</li>
+
+                        <li className="mb-2">Branded Links</li>
+                        <li className="mb-2">Mobile Links</li>
+                        <li className="mb-2">Campaign Management & Analytics</li>
                     </ul>
                 </div>
+
                 <div>
                     <h3 className="font-semibold mb-3">Resources</h3>
+
                     <ul>
-                        <li className="mb-2">Brand Kit</li>
-                        <li className="mb-2">Developer Documentation</li>
+                        <li className="mb-2">Blog</li>
+                        <li className="mb-2">Resource Library</li>
+                        <li className="mb-2">Developers</li>
+                        <li className="mb-2">App Connectors</li>
+                        <li className="mb-2">Support</li>
+                        <li className="mb-2">Trust Center</li>
+                        <li className="mb-2">Browser Extension</li>
+                        <li className="mb-2">Mobile App</li>
                     </ul>
+
                 </div>
                 <div>
-                    <h3 className="font-semibold mb-3">MultiversX Products</h3>
+                    <h3 className="font-semibold mb-3">Legal</h3>
                     <ul>
-                        <li className="mb-2">xPortal</li>
-                        <li className="mb-2">MultiversX Web Wallet</li>
-                        <li className="mb-2">MultiversX DeFi Wallet</li>
-                        <li className="mb-2">Bridge</li>
-                        <li className="mb-2">xExchange</li>
-                        <li className="mb-2">xLaunchpad</li>
+                        <li className="mb-2">About</li>
+                        <li className="mb-2">Careers</li>
+                        <li className="mb-2">Diversity & Inclusion</li>
+                        <li className="mb-2">Partners</li>
+                        <li className="mb-2">Press</li>
+                        <li className="mb-2">Contact</li>
+                        <li className="mb-2">Reviews</li>
                     </ul>
                 </div>
             </div>
             <div className="border-t border-gray-700 mt-10 pt-5">
-                <p className="text-center text-sm">© 2023 MultiversX. All rights reserved.</p>
-                <div className="flex justify-center lg:space-x-6 md:space-x-4 mt-4 space-x-3">
+                <p className="text-center text-sm">© 2024 SnapshortURL. All rights reserved.</p>
+                <div className="flex justify-center lg:space-x-6 md:space-x-4 mt-4 space-x-2">
                     <a className="text-sm" href="#">
-                        xMoney Crypto T&C
-                    </a>
-                    <a className="text-sm" href="#">
-                        xMoney Fiat T&C
+                        Code of Conduct
                     </a>
                     <a className="text-sm" href="#">
                         Privacy Policy
@@ -86,10 +97,10 @@ export default function Component() {
                         Cookie Policy
                     </a>
                     <a className="text-sm" href="#">
-                        Prohibited products and services
+                        Terms of Service
                     </a>
                     <a className="text-sm" href="#">
-                        Refund Policy
+                        Acceptable Use Policy
                     </a>
                 </div>
             </div>
