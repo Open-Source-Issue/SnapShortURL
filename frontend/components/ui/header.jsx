@@ -2,6 +2,7 @@
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 import { useState } from 'react';
+import Image from 'next/image';
 
 function NavBar() {
     const [navbar, setNavbar] = useState(false);
@@ -13,7 +14,16 @@ function NavBar() {
                         <div className="flex items-center justify-between py-3 lg:py-5 lg:block">
                             {/* LOGO */}
                             <Link href="/">
-                                <h2 className="text-2xl text-primary font-bold ">SnapshortURL</h2>
+                                <h2 className="text-2xl text-primary font-bold ">
+                                    <Image
+                                        alt="Logo"
+                                        height="250"
+                                        src="/SnapshortURL.svg"
+                                        style={{
+                                            aspectRatio: "100/24",
+                                            objectFit: "cover",
+                                        }}
+                                        width="250" /></h2>
                             </Link>
                             {/* HAMBURGER BUTTON FOR MOBILE */}
                             <div className="lg:hidden">
@@ -22,10 +32,10 @@ function NavBar() {
                                     onClick={() => setNavbar(!navbar)}
                                 >
                                     {navbar ? (
-                                        <CloseIcon/>
-                                        ) : (
+                                        <CloseIcon />
+                                    ) : (
                                         <Hamburgericon />
-                                        
+
                                     )}
                                 </button>
                             </div>

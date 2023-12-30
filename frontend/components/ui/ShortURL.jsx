@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 export default function ShortURL() {
     const [URL, setURL] = useState('');
     const [result, setResult] = useState();
+    const [copy, setCopy] = useState();
 
     async function fetchData(URL) {
         try {
@@ -31,22 +32,31 @@ export default function ShortURL() {
         }
     }
 
+    const handleCopy = () => {
+        if (result) {
+            setCopy(result);
+            navigator.clipboard.writeText(result);
+        }
+    }
+
 
     return (
         <section className="bg-gray-100 py-16">
-            <div className="container mx-auto px-4">
+            <div className="container mx-auto lg:px-40 md:px-20">
                 <h2 className="text-3xl font-bold mb-4 text-center">
                     Create a concise link.</h2>
                 <div
-                    className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-1">
+                    className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-2">
                     <Input placeholder="Example: http://super-long-link.com/shorten-it" onChange={(e) => setURL(e.target.value)} value={URL} />
                     <Button onClick={() => fetchData(URL)}>Sign up and get your link</Button>
-
                     <div className="flex items-center">
-                        <span className="bg-gray-200 px-3 py-2 rounded-l">bit.ly</span>
                         <Input placeholder="example: favorite-link" value={result} />
                     </div>
-                    <Button>Sign up and get your link</Button>
+                    <Button onClick={() => handleCopy()}>{
+                        copy ? `Copied` : `copy URL`
+                    }
+                    </Button>
+
                 </div>
                 <p className="text-center mt-4">Finish your hyperlink with phrasing that adds distinctiveness to it.</p>
                 <div className="mt-8 text-center">
@@ -57,7 +67,7 @@ export default function ShortURL() {
                         <Badge>Link-in-bio page</Badge>
                     </div>
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     )
 }
