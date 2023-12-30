@@ -23,7 +23,7 @@ export function Component() {
         <ShortURL />
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-xl font-extrabold mb-8 text-center">Embraced by both large enterprises and small businesses globally.</h2>
-          <div className="flex sm:space-x-0 justify-center items-center space-x-2 mb-32">
+          <div className="flex sm:space-x-0 justify-center align-middle lg:flex-row md:flex-row sm:flex-initial  space-x-2 mb-32">
             <Image
               alt="Brand Logo"
               height="30"
@@ -51,7 +51,7 @@ export function Component() {
                 objectFit: "cover",
               }}
               width="100" />
-            <Image
+             {/*  <Image
               alt="Brand Logo"
               height="24"
               src="/mediora.svg"
@@ -60,7 +60,7 @@ export function Component() {
                 objectFit: "cover",
               }}
               width="100" />
-            <Image
+          <Image
               alt="Brand Logo"
               height="24"
               src="/interia.svg"
@@ -68,7 +68,7 @@ export function Component() {
                 aspectRatio: "100/24",
                 objectFit: "cover",
               }}
-              width="100" />
+              width="100" /> */}
           </div>
           <h2 className="text-3xl font-bold mb-8 text-center">The SnapshortURL Connections Platform</h2>
           <p className="text-center mb-16">
@@ -92,7 +92,7 @@ export function Component() {
                 </ul>
               </CardContent>
               <CardFooter className="flex justify-between">
-                <Button variant="outline">Learn More</Button>
+                <Button variant="outline" >Learn More</Button>
                 <Button>Get Started for Free</Button>
               </CardFooter>
             </Card>
@@ -180,7 +180,7 @@ export function Component() {
         </section>
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-16 text-center">Frequently asked questions</h2>
-          <div className="space-y-9 sm:ml-0 ml-96">
+          <div className="space-y-9 lg:space-x-80 md:space-x-40">
             <details>
               <summary className="font-bold cursor-pointer">What is a URL shortener?</summary>
               <p>
@@ -221,7 +221,7 @@ export function Component() {
         <section className="bg-primary text-white py-16">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-8">Beyond just a free URL shortening service</h2>
-            <Button className="bg-white text-black">Get Started</Button>
+            <Button className="bg-white text-black hover:bg-purple hover:text-white border-white hover:bg-primary hover:border-white border-2">Get Started</Button>
           </div>
         </section>
       </main>
