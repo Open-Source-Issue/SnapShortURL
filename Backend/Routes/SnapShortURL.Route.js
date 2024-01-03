@@ -1,4 +1,5 @@
 const express = require('express');
+
 const { handleShortURLGenrated } = require('../Controllers/SnapShortURL')
 
 const router = express.Router();

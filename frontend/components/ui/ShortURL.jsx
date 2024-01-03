@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
+import 'dotenv/config'
 
 export default function ShortURL() {
     const [URL, setURL] = useState('');
@@ -11,7 +12,7 @@ export default function ShortURL() {
 
     async function fetchData(URL) {
         try {
-            const response = await fetch('http://localhost:8080/url', {
+            const response = await fetch(`https://stingray-app-ud7yw.ondigitalocean.app/url`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -23,7 +24,7 @@ export default function ShortURL() {
 
             if (response.ok) {
                 const data = await response.json();
-                setResult(`localhost:8080/${data.id}`);
+                setResult(`https://stingray-app-ud7yw.ondigitalocean.app/${data.id}`);
             } else {
                 console.error('Error:', response.status, response.statusText);
             }
