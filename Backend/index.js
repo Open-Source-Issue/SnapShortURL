@@ -3,11 +3,7 @@ const cors = require('cors');
 const URLRoutes = require('./Routes/SnapShortURL.Route');
 const { connecttoMongoDB } = require('./connect')
 require('dotenv').config();
-
-
-
 const PORT = process.env.PORT || 3000;
-
 const MongoURL = process.env.MongoURL;
 
 const URL = require('./Models/SnapShortURL.models');
@@ -23,7 +19,7 @@ app.use(express.json())
 app.use('/url', URLRoutes)
 
 app.get('/:shortID', async (req, res) => {
-    const shortID = req.params.shortID;
+    const shortID = req.params.shortID; 
     const entry = await URL.findOneAndUpdate(
         {
             shortID
