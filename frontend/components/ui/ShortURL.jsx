@@ -3,12 +3,12 @@ import React, { useState } from 'react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Badge } from "@/components/ui/badge"
-import 'dotenv/config'
 
 export default function ShortURL() {
     const [URL, setURL] = useState('');
     const [result, setResult] = useState();
     const [copy, setCopy] = useState();
+
 
     async function fetchData(URL) {
         try {
@@ -20,7 +20,7 @@ export default function ShortURL() {
                 body: JSON.stringify({
                     "URL": URL
                 })
-            });
+            }); 
 
             if (response.ok) {
                 const data = await response.json();
@@ -42,18 +42,16 @@ export default function ShortURL() {
 
 
     return (
-        <section className="bg-gray-100 py-16">
+        <section className="bg-gray-100 py-16 lg:px-0 md:px-0 px-10">
             <div className="container mx-auto lg:px-40 md:px-20 sm:px-0">
                 <h2 className="text-3xl font-bold mb-4 text-center">
                     Create a concise link.</h2>
                 <div
                     className="flex flex-col md:flex-row justify-center items-center space-y-3 md:space-y-0 md:space-x-2 sm:space-x-0">
                     <Input placeholder="Example: http://super-long-link.com/shorten-it" onChange={(e) => setURL(e.target.value)} value={URL} />
-                    <Button onClick={() => fetchData(URL)}>Sign up and get your link</Button>
-                    <div className="flex items-center">
-                        <Input placeholder="example: favorite-link" value={result} />
-                    </div>
-                    <Button onClick={() => handleCopy()}>{
+                    <Button className="w-full lg:full" onClick={() => fetchData(URL)}>Sign up and get your link</Button>
+                    <Input placeholder="example: favorite-link" value={result} />
+                    <Button className="w-full" onClick={() => handleCopy()}>{
                         copy ? `Copied` : `copy URL`
                     }
                     </Button>

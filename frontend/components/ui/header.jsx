@@ -47,22 +47,22 @@ function NavBar() {
                                 }`}
                         >
                             <ul className="h-screen lg:h-auto items-center justify-center lg:flex ">
-                                <li className="pb-6 lg:text-2xl md:text-3xl text-black py-2 lg:px-6 text-center lg:border-b-0  hover:text-primary transition-colors ease-in-out duration-500 lg:hover:text-primary lg:hover:bg-transparent">
+                                <li className="pb-6 lg:text-xl md:text-3xl text-black py-2 lg:px-6 text-center lg:border-b-0  hover:text-primary transition-colors ease-in-out duration-500 lg:hover:text-primary lg:hover:bg-transparent">
                                     <Link href="/product" onClick={() => setNavbar(!navbar)}>
                                         Product
                                     </Link>
                                 </li>
-                                <li className="pb-6 lg:text-2xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
+                                <li className="pb-6 lg:text-xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
                                     <Link href="/pricing" onClick={() => setNavbar(!navbar)}>
                                         Pricing
                                     </Link>
                                 </li>
-                                <li className="pb-6 lg:text-2xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
+                                <li className="pb-6 lg:text-xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
                                     <Link href="/resources" onClick={() => setNavbar(!navbar)}>
                                         Resources
                                     </Link>
                                 </li>
-                                <li className="pb-6 lg:text-2xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
+                                <li className="pb-6 lg:text-xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
                                     <Link href="/products" onClick={() => setNavbar(!navbar)}>
                                         Login
                                     </Link>
