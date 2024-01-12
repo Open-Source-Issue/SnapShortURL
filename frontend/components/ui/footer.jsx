@@ -90,7 +90,7 @@ export default function Component() {
                     <a className="text-sm" href="#">
                         Code of Conduct
                     </a>
-                    <a className="text-sm" href="/privacypolicy">
+                    <a className="text-sm" href="#">
                         Privacy Policy
                     </a>
                     <a className="text-sm" href="#">
