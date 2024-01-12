@@ -63,12 +63,12 @@ function NavBar() {
                                     </Link>
                                 </li>
                                 <li className="pb-6 lg:text-xl md:text-3xl text-black py-2 px-6 text-center lg:border-b-0  hover:text-primary lg:hover:text-primary transition-colors ease-in-out duration-500 lg:hover:bg-transparent">
-                                    <Link href="/products" onClick={() => setNavbar(!navbar)}>
+                                    <Link href="/login" onClick={() => setNavbar(!navbar)}>
                                         Login
                                     </Link>
                                 </li>
                                 <div className='flex justify-center align-middle'>
-                                    <Button className="ml-4">Sign Up Free</Button>
+                                    <Button className="ml-4"><Link href="/signup">Sign Up Free</Link></Button>
                                     <Button className="ml-4" >
                                         Get a Quote
                                     </Button>
