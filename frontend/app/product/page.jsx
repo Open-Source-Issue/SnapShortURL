@@ -51,7 +51,7 @@ export default function Component() {
               <CardHeader>
                 <CardTitle>API Integration</CardTitle>
                 <CardDescription>
-                  Integrate Bitly's link management platform with your existing systems.
+                  Integrate Bitlys link management platform with your existing systems.
                 </CardDescription>
               </CardHeader>
               <CardContent>
