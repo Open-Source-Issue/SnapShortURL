@@ -68,7 +68,7 @@ function NavBar() {
                                     </Link>
                                 </li>
                                 <div className='flex justify-center align-middle'>
-                                    <Button className="ml-4">Sign Up Free</Button>
+                                    <Button className="ml-4"><Link href={'/signup'}>Sign Up Free</Link></Button>
                                     <Button className="ml-4" >
                                         Get a Quote
                                     </Button>
