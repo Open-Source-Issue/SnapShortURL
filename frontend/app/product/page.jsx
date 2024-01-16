@@ -51,7 +51,7 @@ export default function Component() {
               <CardHeader>
                 <CardTitle>API Integration</CardTitle>
                 <CardDescription>
-                  Integrate SnapshortURL's link management platform with your existing systems.
+                  Integrate SnapshortURL link management platform with your existing systems.
                 </CardDescription>
               </CardHeader>
               <CardContent>
