@@ -1,6 +1,6 @@
 # SnapShortURL
 
-![SnapShortURL Logo](https://github.com/Open-Source-Issue/SnapShortURL/blob/main/SnapShortURL.png)
+![SnapShortURL Logo](https://github.com/Open-Source-Issue/SnapShortURL/blob/main/frontend/public/SnapShortURL.png)
 
 SnapShortURL is an open-source URL shortening platform designed for simplicity and speed. With a focus on clean, efficient code, SnapShortURL allows users to quickly generate shortened URLs, making sharing links a breeze. The platform is customizable, lightweight, and easy to deploy, making it an ideal solution for those who value both functionality and elegance. Join us in simplifying the world of URL shortening with SnapShortURL.
 
