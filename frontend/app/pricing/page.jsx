@@ -1,68 +1,64 @@
 import { Button } from "@/components/ui/button"
 import { CardTitle, CardDescription, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
 
-export default async function Component() {  
+export default function Component() {
   return (
     <div key="1" className="bg-white text-gray-700 pt-10 ">
       <main>
         <section className="container mx-auto px-4 py-16 text-center">
-          <h1 className="text-5xl font-bold mb-4 text-primary">Our Products</h1>
-          <p className="mb-8">Explore our range of products. Upgrade, downgrade, or cancel anytime.</p>
+          <h1 className="text-5xl font-bold mb-4 text-primary">Our Pricing</h1>
+          <p className="mb-8">Choose the best plan for your business. Upgrade, downgrade, or cancel anytime.</p>
         </section>
         <section className="container mx-auto px-4 py-16">
         <div className="lg:ml-32 lg:mr-32 grid grid-cols-1 lg:grid-cols-3 gap-8">
             <Card className="w-full">
               <CardHeader>
-                <CardTitle>Link Shortener</CardTitle>
-                <CardDescription>
-                  Shorten, brand and track every link with industry-leading link management platform.
-                </CardDescription>
+                <CardTitle>Free</CardTitle>
+                <CardDescription>For individuals or small teams starting out.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Shorten and brand your links</li>
-                  <li>Track individual link analytics</li>
-                  <li>Gather audience intelligence</li>
+                  <li>500 shortened links per month</li>
+                  <li>Basic analytics</li>
+                  <li>Community support</li>
                 </ul>
               </CardContent>
               <CardFooter className="flex justify-center">
-                <Button>Learn More</Button>
+                <Button>Get Started for Free</Button>
               </CardFooter>
             </Card>
             <Card className="w-full">
               <CardHeader>
-                <CardTitle>Mobile Link Management</CardTitle>
-                <CardDescription>
-                  Drive seamless experiences across every channel and every device with Bitly Enterprise.
-                </CardDescription>
+                <CardTitle>Pro</CardTitle>
+                <CardDescription>For growing businesses who need more power and speed.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Connect with your audience</li>
-                  <li>Deliver seamless experiences</li>
-                  <li>Track campaign performance</li>
+                  <li>Unlimited shortened links</li>
+                  <li>Advanced analytics</li>
+                  <li>Email support</li>
+                  <li>Custom branded links</li>
                 </ul>
               </CardContent>
               <CardFooter className="flex justify-center">
-                <Button>Learn More</Button>
+                <Button>Start 14-Day Free Trial</Button>
               </CardFooter>
             </Card>
             <Card className="w-full">
               <CardHeader>
-                <CardTitle>API Integration</CardTitle>
-                <CardDescription>
-                  Integrate SnapshortURL link management platform with your existing systems.
-                </CardDescription>
+                <CardTitle>Enterprise</CardTitle>
+                <CardDescription>For businesses at scale that require custom solutions.</CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Integrate with your existing systems</li>
-                  <li>Automate link creation</li>
-                  <li>Access real-time data and insights</li>
+                  <li>Everything in Pro</li>
+                  <li>Priority support</li>
+                  <li>Custom integrations</li>
+                  <li>Dedicated account manager</li>
                 </ul>
               </CardContent>
               <CardFooter className="flex justify-center">
-                <Button>Learn More</Button>
+                <Button>Contact Sales</Button>
               </CardFooter>
             </Card>
           </div>
