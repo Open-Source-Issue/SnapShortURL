@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+        }
+
+        .apple {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background: white;
+            margin-bottom: 100px
+        }
+
+        .cd-tabs-navigation {
+            font-family: 'Arial', sans-serif;
+            text-transform: uppercase;
+            background-color: red;
+            margin-top: 200px;
+            padding: 0;
+            list-style: none;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .cd-tabs-navigation.is-fixed {
+            background: purple;
+        }
+
+        li {
+            display: inline-block;
+            margin: 20px;
+        }
+
+        li a {
+            padding: 15px;
+            border-bottom: 1px solid yellow;
+            color: yellow;
+            text-decoration: none;
+
+            &:hover {
+                background: white;
+                color: black;
+            }
+        }
+
+        .is-fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        p {
+            width: 50%;
+            margin: 12px auto;
+            line-height: 1.6em;
+        }
+
+        h1 {
+            font-weight: 100;
+            font-size: 22px;
+            text-align: center;
+            border-bottom: 2px solid red;
+            padding: 12px 0;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div>
+        <h1 class="apple">Headline</h1>
+        <p>Lorem ipsum dolor sit.Lorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor
+            sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor
+            sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor
+            sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor
+            sitLorem ipsum dolor sitLorem ipsum dolor sit</p>
+        <ul class="cd-tabs-navigation">
+            <li><a href="">Item 1</a></li>
+            <li ><a href="">Item 2</a></li>
+            <li ><a href="">Item 3</a></li>
+        </ul>
+        <p>Lorem ipsus impedit non atque veritatis ad ex aut, laborum rem eos repellendus, pariatur, velit tempore, sint
+            dolorem? At, nemo, mollitia.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ducimus dignissimos impedit non atque
+            veritatis ad ex aut, laborum rem eos repellendus, pariatur, velit tempore, sint dolorem? At, nemo, mollitia.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit.Lorem ipsum dolor sitLorem
+            ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem
+            ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem
+            ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem
+            ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sit</p>
+        <ul class="cd-tabs-navigation">
+            <li ><a href="">Item 1</a></li>
+            <li ><a href="">Item 2</a></li>
+            <li ><a href="">Item 3</a></li>
+        </ul>
+        <p>Lorem ipsus impedit non atque veritatis ad ex aut, laborum rem eos repellendus, pariatur, velit tempore, sint
+            dolorem? At, nemo, mollitia.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ducimus dignissimos impedit non atque
+            veritatis ad ex aut, laborum rem eos repellendus, pariatur, velit tempore, sint dolorem? At, nemo, mollitia.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elitLorem ipsum dolor sit.Lorem ipsum dolor sitLorem
+            ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem
+            ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem
+            ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem
+            ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sitLorem ipsum dolor sit</p>
+        <ul class="cd-tabs-navigation">
+            <li ><a href="">Item 1</a></li>
+            <li ><a href="">Item 2</a></li>
+            <li ><a href="">Item 3</a></li>
+        </ul>
+        <p>Lorem ipsus impedit non atque veritatis ad ex aut, laborum rem eos repellendus, pariatur, velit tempore, sint
+            dolorem? At, nemo, mollitia.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ducimus dignissimos impedit non atque
+            veritatis ad ex aut, laborum rem eos repellendus, pariatur, velit tempore, sint dolorem? At, nemo, mollitia.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta ducimus dignissimos impedit non atque
+            veritatis ad ex aut, laborum rem eos repellendus, pariatur, velit tempore, sint dolorem? At, nemo, mollitia.
+        </p>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        console.log(jQuery)
+        jQuery.fn.extend({
+
+            stickIt: function () {
+                el = $(this);
+                elHeight = el.height();
+                elementOriginalPosition = el.offset().top;
+                originalBodyPadding = jQuery('body').css('paddingTop');
+
+                // see: http://stackoverflow.com/questions/7392058/more-efficient-way-to-handle-window-scroll-functions-in-jquery
+                jQuery(window).on('scroll', function () {
+                    if (jQuery(window).scrollTop() > elementOriginalPosition) {
+                        this.el.addClass('is-fixed');
+                        jQuery('body').css('paddingTop', elHeight);
+                    }
+                    else {
+                        this.el.removeClass('is-fixed');
+                        jQuery('body').css('paddingTop', originalBodyPadding);
+                    }
+                });
+            },
+
+        });
+        /**
+         *  Init StickIt
+         */
+        $('.cd-tabs-navigation').stickIt();
+    </script>
+</body>
+
+</html>
