@@ -1,8 +1,3 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/oZqqD47CK5w
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -14,7 +9,7 @@ export default function Component() {
         <div className="space-y-2 text-center">
           <h1 className="text-3xl text-black font-bold">Contact Us</h1>
           <p className="text-zinc-500 dark:text-zinc-400">
-            We'd love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.
+            We did love to hear from you. Please fill out the form below and we will get back to you as soon as possible.
           </p>
         </div>
         <div className="space-y-4">
