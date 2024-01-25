@@ -32,7 +32,7 @@ export default function Component() {
                     <h3 className="font-semibold mb-3">Products</h3>
                     <ul>
                         <li className="mb-2">URL Shortener</li>
-                        <li className="mb-2">QR Codes</li>
+                        <li className="mb-2"><a href="/qucode">QR Codes</a></li>
                         <li className="mb-2">Link-in-bio</li>
                     </ul>
                 </div>
