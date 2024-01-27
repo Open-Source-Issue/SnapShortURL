@@ -71,7 +71,7 @@ export function Component() {
               }}
               width="100" /> */}
           </div>
-          <h2 className="text-3xl font-bold mb-8 text-center">The SnapshortURL Connections Platform</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center">The SnapshortURL Connections Platform</h2>
           <p className="text-center mb-16">
             A unified platform for building brand connections, managing links and QR Codes, and connecting with audiences everywhere. Simplify your processes.
           </p>
