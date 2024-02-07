@@ -83,14 +83,14 @@ export default function Component() {
             <div className="max-w-2xl">
               <div className="overflow-x-auto scrollbar-hidden whitespace-nowrap">
                 <blockquote className="italic text-lg mb-4 inline-block mx-4">
-                  "Our goal was to implement a system that would not interrupt the gameplay experience when a new update
-                  was announced, and we found QR Codes to be the perfect answer."
+                  Our goal was to implement a system that would not interrupt the gameplay experience when a new update
+                  was announced, and we found QR Codes to be the perfect answer.
                 </blockquote>
                 <blockquote className="italic text-lg mb-4 inline-block mx-4">
-                  "Another quote for the carousel."
+                  Another quote for the carousel.
                 </blockquote>
                 <blockquote className="italic text-lg mb-4 inline-block mx-4">
-                  "Yet another quote for the carousel."
+                  Yet another quote for the carousel.
                 </blockquote>
               </div>
               <p className="text-sm">Juan Zacarias – Game Product Manager, Motive Studios EA</p>
