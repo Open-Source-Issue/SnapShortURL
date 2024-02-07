@@ -74,7 +74,7 @@ export default function Component() {
                 <div>
                     <h3 className="font-semibold mb-3">Legal</h3>
                     <ul>
-                        <li className="mb-2">About</li>
+                        <li className="mb-2"><a href="/about">About</a></li>
                         <li className="mb-2">Careers</li>
                         <li className="mb-2">Diversity & Inclusion</li>
                         <li className="mb-2">Partners</li>
