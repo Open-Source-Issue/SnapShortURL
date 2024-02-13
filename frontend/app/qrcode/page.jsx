@@ -93,7 +93,7 @@ export default function Component() {
                   Yet another quote for the carousel.
                 </blockquote>
               </div>
-              <p className="text-sm">Juan Zacarias – Game Product Manager, Motive Studios EA</p>
+              <p className="text-sm">Juan Zacarias  Game Product Manager, Motive Studios EA</p>
               <div className="flex justify-center mt-4">
                 <span className="h-3 w-3 bg-gray-300 rounded-full mx-1" />
                 <span className="h-3 w-3 bg-gray-300 rounded-full mx-1" />
