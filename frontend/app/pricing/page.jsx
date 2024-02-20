@@ -4,8 +4,8 @@ import { CardTitle, CardDescription, CardHeader, CardContent, CardFooter, Card }
 export default function Component() {
   return (
     <div key="1" className="bg-white text-gray-700 pt-10 ">
-      <main>
-        <section className="container mx-auto px-4 py-16 text-center">
+        <main className="flex-1">
+      <section className="container mx-auto px-4 py-16 text-center">
           <h1 className="text-5xl font-bold mb-4 text-primary">Our Pricing</h1>
           <p className="mb-8">Choose the best plan for your business. Upgrade, downgrade, or cancel anytime.</p>
         </section>

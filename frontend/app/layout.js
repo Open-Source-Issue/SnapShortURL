@@ -3,7 +3,7 @@ import './globals.css'
 import Header from '@/components/ui/header'
 import Footer from '@/components/ui/footer'
 
-const poppins = Poppins({ subsets: ['latin-ext'],weight:['400'] })
+const poppins = Poppins({ subsets: ['devanagari'],weight:['400'] })
 
 export const metadata = {
   title: 'SnapshortURL',
