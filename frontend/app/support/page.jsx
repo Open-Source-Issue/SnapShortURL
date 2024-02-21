@@ -8,7 +8,7 @@ export default function Component() {
   return (
     <div key="1" className="bg-white text-gray-700 pt-10">
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="container mx-auto px-4 py-32">
           <div className="container px-4 md:px-6">
             <div className="space-y-4 text-center">
               <div className="space-y-2">
@@ -16,14 +16,14 @@ export default function Component() {
                   Welcome to SnapshortURL <span className="text-primary"></span>Support
                 </h1>
                 <p className="mx-auto max-w-[600px]  md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  We're here to help. Find answers to your questions or contact our support team.
+                  We&apos;re here to help. Find answers to your questions or contact our support team.
                 </p>
               </div>
             </div>
           </div>
         </section>
         <section className="container mx-auto px-4 py-16">
-        <div className="lg:ml-24 lg:mr-24 grid grid-cols-1 lg:grid-cols-1">
+          <div className="lg:ml-24 lg:mr-24 grid grid-cols-1 lg:grid-cols-1">
             <div className="space-y-4">
               <div className="space-y-2">
                 <button className="flex items-center justify-between w-full p-4 rounded-lg bg-gray-50 hover:bg-gray-50/90 focus:outline-none  dark:hover:bg-gray-800 dark:focus:outline-none">
@@ -31,8 +31,8 @@ export default function Component() {
                   <ChevronDownIcon className="w-4 h-4" />
                 </button>
                 <div className="p-4 rounded-lg bg-gray-50 text-sm">
-                  To create a custom short URL, log in to your account and go to the dashboard. Click on the "Create
-                  Short URL" button and enter the original URL you want to shorten. Then, click on the "Customize"
+                  To create a custom short URL, log in to your account and go to the dashboard. Click on the &quot;Create
+                  Short URL&quot; button and enter the original URL you want to shorten. Then, click on the &quot;Customize&quot;
                   button and enter your desired custom alias. If the alias is available, your custom short URL will be
                   created.
                 </div>
@@ -43,7 +43,7 @@ export default function Component() {
                   <ChevronDownIcon className="w-4 h-4" />
                 </button>
                 <div className="p-4 rounded-lg bg-gray-50 text-sm ">
-                  To track the performance of your short URLs, log in to your account and go to the "Analytics" section.
+                  To track the performance of your short URLs, log in to your account and go to the &quot;Analytics&quot; section.
                   Here, you will see detailed analytics for each of your short URLs, including the number of clicks,
                   geographic location of visitors, referrers, and devices used. You can also generate reports and export
                   data for further analysis.
@@ -56,21 +56,21 @@ export default function Component() {
                 </button>
                 <div className="p-4 rounded-lg bg-gray-50 text-sm">
                   Yes, you can edit the destination URL of an existing short URL. Log in to your account and go to the
-                  "My URLs" section. Find the short URL you want to edit and click on the "Edit" button. You can then
+                  &quot;My URLs&quot; section. Find the short URL you want to edit and click on the&quot;Edit&quot; button. You can then
                   enter the new destination URL and save your changes.
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
-        <div className="lg:ml-24 lg:mr-24 grid grid-cols-1 lg:grid-cols-1">
+        <section className="container mx-auto px-4 py-16">
+          <div className="lg:ml-24 lg:mr-24 grid grid-cols-1 lg:grid-cols-1">
             <div className="space-y-4">
               <div className="space-y-2">
                 <h3 className="font-bold">How do I create a custom short URL?</h3>
-                <p className="text-sm  dark:text-gray-400">
-                  To create a custom short URL, log in to your account and go to the dashboard. Click on the "Create
-                  Short URL" button and enter the original URL you want to shorten. Then, click on the "Customize"
+                <p className="text-sm dark:text-gray-400">
+                  To create a custom short URL, log in to your account and go to the dashboard. Click on the &quot;Create
+                  Short URL&quot; button and enter the original URL you want to shorten. Then, click on the &quot;Customize&quot;
                   button and enter your desired custom alias. If the alias is available, your custom short URL will be
                   created.
                 </p>
@@ -78,7 +78,7 @@ export default function Component() {
               <div className="space-y-2">
                 <h3 className="font-bold">How do I track the performance of my short URLs?</h3>
                 <p className="text-sm  dark:text-gray-400">
-                  To track the performance of your short URLs, log in to your account and go to the "Analytics" section.
+                  To track the performance of your short URLs, log in to your account and go to the &quot;Analytics&quot; section.
                   Here, you will see detailed analytics for each of your short URLs, including the number of clicks,
                   geographic location of visitors, referrers, and devices used. You can also generate reports and export
                   data for further analysis.
@@ -88,14 +88,14 @@ export default function Component() {
                 <h3 className="font-bold">Can I edit the destination URL of an existing short URL?</h3>
                 <p className="text-sm  dark:text-gray-400">
                   Yes, you can edit the destination URL of an existing short URL. Log in to your account and go to the
-                  "My URLs" section. Find the short URL you want to edit and click on the "Edit" button. You can then
+                  &quot;My URLs&quot; section. Find the short URL you want to edit and click on the &quot;Edit&quot; button. You can then
                   enter the new destination URL and save your changes.
                 </p>
               </div>
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 border-t">
+        <section className="container mx-auto px-4 py-16">
           <div className="container grid items-center gap-4 px-4 md:px-6">
             <div className="space-y-3">
               <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-center">Contact Support</h2>

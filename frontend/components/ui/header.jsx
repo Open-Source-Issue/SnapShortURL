@@ -85,7 +85,6 @@ function NavBar() {
 export default NavBar;
 
 
-
 function Hamburgericon(props) {
     return (
         <svg
