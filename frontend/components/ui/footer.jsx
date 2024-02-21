@@ -40,7 +40,7 @@ export default function Component() {
                     <h3 className="font-semibold mb-3">Solutions</h3>
 
                     <ul>
-                        <li className="mb-2"> Social Media</li>
+                        <li className="mb-2">Social Media</li>
                         <li className="mb-2">Digital Marketing</li>
                         <li className="mb-2">Customer Service For Developers</li>
                     </ul>
@@ -65,7 +65,7 @@ export default function Component() {
                         <li className="mb-2">Developers</li>
                         <li className="mb-2">App Connectors</li>
                         <li className="mb-2"><a href="/support">Support</a></li>
-                        <li className="mb-2">Trust Center</li>
+                        <li className="mb-2"><a href="/trustcenter">Trust Center</a></li>
                         <li className="mb-2">Browser Extension</li>
                         <li className="mb-2">Mobile App</li>
                     </ul>

@@ -4,13 +4,13 @@ import { CardTitle, CardDescription, CardHeader, CardContent, CardFooter, Card }
 export default function Component() {
   return (
     <div key="1" className="bg-white text-gray-700 pt-10 ">
-        <main className="flex-1">
-      <section className="container mx-auto px-4 py-16 text-center">
+      <main className="flex-1">
+        <section className="container mx-auto px-4 py-16 text-center">
           <h1 className="text-5xl font-bold mb-4 text-primary">Our Pricing</h1>
           <p className="mb-8">Choose the best plan for your business. Upgrade, downgrade, or cancel anytime.</p>
         </section>
         <section className="container mx-auto px-4 py-16">
-        <div className="lg:ml-32 lg:mr-32 grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:ml-32 lg:mr-32 grid grid-cols-1 lg:grid-cols-3 gap-8">
             <Card className="w-full">
               <CardHeader>
                 <CardTitle>Free</CardTitle>
