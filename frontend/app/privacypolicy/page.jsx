@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Component() {
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div className="bg-gray-100 min-h-screen flex items-center justify-center py-36">
       <div className="max-w-2xl rounded-lg shadow-lg bg-white p-6 space-y-6 border border-gray-200 dark:border-gray-700 overflow-y-auto">
         <div className="space-y-2 text-center">
           <h1 className="text-3xl font-bold">Privacy Policy</h1>
@@ -46,7 +46,7 @@ export default function Component() {
           </section>
         </div>
         <div className="flex justify-center">
-          <Link className="text-blue-500 hover:text-blue-700" href="#">
+          <Link className="text-blue-500 hover:text-blue-700" href="/">
             Back to Home
           </Link>
         </div>

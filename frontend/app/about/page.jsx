@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
-// import { Textarea } from "@/components/ui/textarea"
+import { Textarea } from "@/components/ui/textarea"
 
 export default function Component() {
   return (
@@ -147,7 +147,7 @@ export default function Component() {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">Your message</Label>
-                  {/* <Textarea id="message" required /> */}
+                  <Textarea className="min-h-[150px] resize-y" id="message" placeholder="Enter your message" required />
                 </div>
                 <Button type="submit">Submit</Button>
               </form>

@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { CardTitle, CardDescription, CardHeader, Card } from "@/components/ui/card"
+import Testimonial from "@/components/ui/Testimonial"
 
 export default function Component() {
   return (
-    <div key="1" className="bg-white text-gray-700 pt-10 ">
+    <div key="1" className="bg-white text-gray-700 py-36">
       <main>
         <section className="container mx-auto px-4 py-16 text-center">
           <h1 className="text-5xl font-bold mb-4 text-purple">Create your <span className="text-primary">QR</span> Code</h1>
@@ -76,35 +77,7 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="container mx-auto px-4 py-16">
-          <h2 className="text-3xl font-bold mb-8 text-center">What Bitly customers are saying</h2>
-          <div className="flex justify-center items-center space-x-4 mb-16">
-            <ChevronLeftIcon className="h-6 w-6 text-gray-500" />
-            <div className="max-w-2xl">
-              <div className="overflow-x-auto scrollbar-hidden whitespace-nowrap">
-                <blockquote className="italic text-lg mb-4 inline-block mx-4">
-                  Our goal was to implement a system that would not interrupt the gameplay experience when a new update
-                  was announced, and we found QR Codes to be the perfect answer.
-                </blockquote>
-                <blockquote className="italic text-lg mb-4 inline-block mx-4">
-                  Another quote for the carousel.
-                </blockquote>
-                <blockquote className="italic text-lg mb-4 inline-block mx-4">
-                  Yet another quote for the carousel.
-                </blockquote>
-              </div>
-              <p className="text-sm">Juan Zacarias  Game Product Manager, Motive Studios EA</p>
-              <div className="flex justify-center mt-4">
-                <span className="h-3 w-3 bg-gray-300 rounded-full mx-1" />
-                <span className="h-3 w-3 bg-gray-300 rounded-full mx-1" />
-                <span className="h-3 w-3 bg-gray-300 rounded-full mx-1" />
-                <span className="h-3 w-3 bg-gray-300 rounded-full mx-1" />
-                <span className="h-3 w-3 bg-gray-300 rounded-full mx-1" />
-              </div>
-            </div>
-            <ChevronRightIcon className="h-6 w-6 text-gray-500" />
-          </div>
-        </section>
+        <Testimonial/>
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-16 text-center">Frequently asked questions</h2>
           <div className="space-y-9 lg:space-x-80 md:space-x-40">

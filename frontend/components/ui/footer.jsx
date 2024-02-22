@@ -7,6 +7,7 @@ export default function Component() {
                 <div>
                     <h2 className="lg:text-2xl md:text-2xl font-bold mb-2 sm:text-xl">SnapshortURL</h2>
                     <p className="mb-4">Streamlined URL Shortening for the Modern Web</p>
+                    <a href="/">
                     <Image
                         alt="Great Place to Work Certified"
                         className="mb-6 pl-0"
@@ -18,6 +19,7 @@ export default function Component() {
                         }}
                         width="200"
                     />
+                    </a>
                     <p className="text-sm">Follow us:</p>
                     <div className="flex space-x-4 mt-2">
                         <XIcon className="h-6 w-6" />
@@ -80,7 +82,7 @@ export default function Component() {
                         <li className="mb-2">Partners</li>
                         <li className="mb-2">Press</li>
                         <li className="mb-2"><a href="/contactus">Contact</a></li>
-                        <li className="mb-2"><a href="/review">Reviews</a></li>
+                        <li className="mb-2">Reviews</li>
                     </ul>
                 </div>
             </div>
