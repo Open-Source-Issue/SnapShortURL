@@ -71,7 +71,7 @@ export function Component() {
               }}
               width="100" /> */}
           </div>
-            <h2 className="text-3xl font-bold mb-8 text-center">The SnapshortURL Connections Platform</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">The SnapshortURL Connections Platform</h2>
           <p className="text-center mb-16">
             A unified platform for building brand connections, managing links and QR Codes, and connecting with audiences everywhere. Simplify your processes.
           </p>
@@ -161,43 +161,43 @@ export function Component() {
         <Testimonial />
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-16 text-center">Frequently asked questions</h2>
-          <div className="space-y-9 lg:space-x-80 md:space-x-40">
-            <details>
-              <summary className="font-bold cursor-pointer">What is a URL shortener?</summary>
-              <p>
-                A URL shortener is a tool that creates a short, unique URL that will redirect to the specified webpage
-                when accessed.
-              </p>
-            </details>
-            <details>
-              <summary className="font-bold cursor-pointer">What is a custom URL shortener?</summary>
-              <p>
-                A custom URL shortener allows you to brand your short links with your chosen domain name, providing a
-                consistent identity for your links.
-              </p>
-            </details>
-            <details>
-              <summary className="font-bold cursor-pointer">What is a QR Code?</summary>
-              <p>
-                A QR Code is a two-dimensional barcode that can be scanned using a smartphone camera to quickly access a
-                webpage or app.
-              </p>
-            </details>
-            <details>
-              <summary className="font-bold cursor-pointer">What is a Link-in-bio?</summary>
-              <p>
-                A Link-in-bio is a single link that directs followers to a curated page with multiple links, often used
-                on social media profiles.
-              </p>
-            </details>
-            <details>
-              <summary className="font-bold cursor-pointer">Why choose SnapshortURL?</summary>
-              <p>
-                SnapshortURL offers robust link management features, detailed analytics, and a wide range of integrations,
-                making it a top choice for businesses and individuals.
-              </p>
-            </details>
-          </div>
+            <div className="space-y-9 lg:space-x-80 md:space-x-40">
+              <details>
+                <summary className="font-bold cursor-pointer">What is a URL shortener?</summary>
+                <p>
+                  A URL shortener is a tool that creates a short, unique URL that will redirect to the specified webpage
+                  when accessed.
+                </p>
+              </details>
+              <details>
+                <summary className="font-bold cursor-pointer">What is a custom URL shortener?</summary>
+                <p>
+                  A custom URL shortener allows you to brand your short links with your chosen domain name, providing a
+                  consistent identity for your links.
+                </p>
+              </details>
+              <details>
+                <summary className="font-bold cursor-pointer">What is a QR Code?</summary>
+                <p>
+                  A QR Code is a two-dimensional barcode that can be scanned using a smartphone camera to quickly access a
+                  webpage or app.
+                </p>
+              </details>
+              <details>
+                <summary className="font-bold cursor-pointer">What is a Link-in-bio?</summary>
+                <p>
+                  A Link-in-bio is a single link that directs followers to a curated page with multiple links, often used
+                  on social media profiles.
+                </p>
+              </details>
+              <details>
+                <summary className="font-bold cursor-pointer">Why choose SnapshortURL?</summary>
+                <p>
+                  SnapshortURL offers robust link management features, detailed analytics, and a wide range of integrations,
+                  making it a top choice for businesses and individuals.
+                </p>
+              </details>
+            </div>
         </section>
         <section className="bg-primary text-white py-16">
           <div className="container mx-auto px-4 text-center">
