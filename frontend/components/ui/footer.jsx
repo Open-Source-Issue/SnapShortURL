@@ -42,7 +42,7 @@ export default function Component() {
                     <h3 className="font-semibold mb-3">Solutions</h3>
 
                     <ul>
-                        <li className="mb-2">Social Media</li>
+                        <li className="mb-2"><a href="/social">Social Media</a></li>
                         <li className="mb-2">Digital Marketing</li>
                         <li className="mb-2">Customer Service For Developers</li>
                     </ul>
