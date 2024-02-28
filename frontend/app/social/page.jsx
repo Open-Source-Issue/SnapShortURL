@@ -7,7 +7,7 @@ export default function Component() {
               <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Features to power your links</h2>
               <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 SnapShortURL provides the tools you need to shorten, customize, and share your links effectively. Whether
-                you're looking to track engagement, add retargeting pixels, or create branded short links, we've got you
+                you&apos;re looking to track engagement, add retargeting pixels, or create branded short links, we&apos;ve got you
                 covered.
               </p>
             </div>
