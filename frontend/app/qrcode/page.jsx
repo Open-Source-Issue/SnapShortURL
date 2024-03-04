@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { CardTitle, CardDescription, CardHeader, Card } from "@/components/ui/card"
 import Testimonial from "@/components/ui/Testimonial"
+import UsageStatistics from "@/components/ui/UsageStatistics"
 
 export default function Component() {
   return (
@@ -58,24 +59,7 @@ export default function Component() {
           </div>
         </section>
         <section className="bg-gray-100 py-16">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold">500K</h2>
-              <p>global paying customers</p>
-            </div>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold">256M</h2>
-              <p>links & QR Codes created monthly</p>
-            </div>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold">10B</h2>
-              <p>connections (clicks & scans) monthly</p>
-            </div>
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold">800+</h2>
-              <p>app integrations</p>
-            </div>
-          </div>
+          <UsageStatistics />
         </section>
         <Testimonial/>
         <section className="container mx-auto px-4 py-16">
