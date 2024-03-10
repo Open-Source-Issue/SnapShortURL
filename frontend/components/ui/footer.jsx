@@ -82,7 +82,7 @@ export default function Component() {
                         <li className="mb-2"><a href="/partner">Partners</a></li>
                         <li className="mb-2">Press</li>
                         <li className="mb-2"><a href="/contactus">Contact</a></li>
-                        <li className="mb-2">Reviews</li>
+                        <li className="mb-2"><a href="/review">Reviews</a></li>
                     </ul>
                 </div>
             </div>
