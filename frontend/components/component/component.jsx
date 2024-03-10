@@ -4,6 +4,8 @@ import { CardTitle, CardDescription, CardHeader, CardContent, CardFooter, Card }
 import ShortURL from "../ui/ShortURL"
 import Testimonial from "../ui/Testimonial";
 import UsageStatistics from "../ui/UsageStatistics";
+import { TabsTrigger, TabsList, TabsContent, Tabs } from "@/components/ui/tabs"
+import { Input } from "../ui/input";
 
 export function Component() {
   return (
@@ -16,13 +18,77 @@ export function Component() {
             <br />
             Share seamlessly, analyze performance, and optimize online presence effortlessly on the Connections Platform.
           </p>
-          <div className="flex justify-center space-x-4">
-            <Button variant="outline">Short link</Button>
-            <Button variant="outline">QR Code</Button>
-            <Button variant="outline">Link-in-bio</Button>
+          <div className="4">
+            <Tabs defaultValue="features">
+              <TabsList className="">
+                <TabsTrigger value="features">Short link</TabsTrigger>
+                <TabsTrigger value="description">QR Code</TabsTrigger>
+                <TabsTrigger value="specs">Link-in-bio</TabsTrigger>
+              </TabsList>
+              <TabsContent value="features">
+                <ShortURL />
+              </TabsContent>
+              <TabsContent value="description">
+                <div className="prose max-w-none space-y-4">
+                  <div className="max-w-7xl mx-auto p-6 bg-white rounded-lg shadow-md flex justify-between">
+                    <div className="flex flex-col justify-between">
+                      <div>
+                        <h1 className="text-3xl font-bold">Create a QR Code</h1>
+                        <p className="text-lg my-4">Enter your QR Code destination</p>
+                        <Input placeholder="Example: http://super-long-link.com" />
+                      </div>
+                      <Button className=" text-white mt-4">Sign up and get your QR Code</Button>
+                      <div className="flex items-center space-x-2">
+                        <CheckIcon className="text-green-500" />
+                        <span>Short links</span>
+                        <CheckIcon className="text-green-500" />
+                        <span>QR Codes</span>
+                        <CheckIcon className="text-green-500" />
+                        <span>Link-in-bio page</span>
+                      </div>
+                    </div>
+                    <div className="flex flex-col justify-between">
+                      <div className="flex space-x-4">
+                        <Button className="text-blue-600" variant="ghost">
+                          Short link
+                        </Button>
+                        <Button className="text-blue-600" variant="ghost">
+                          QR Code
+                        </Button>
+                        <Button className="text-blue-600" variant="ghost">
+                          Link-in-bio
+                        </Button>
+                      </div>
+                      <div className="flex flex-col">
+                      <img
+                          alt="QR Code Example"
+                          className="self-end"
+                          height="200"
+                          src="/qr.svg"
+                          style={{
+                            aspectRatio: "200/200",
+                            objectFit: "cover",
+                          }}
+                          width="200"
+                        />
+                        <div className="bg-blue-100 text-blue-800 text-sm p-4 rounded mt-4">
+                          QR Codes are everywhere
+                          <p className="text-gray-700 mt-2">Connect your real-world audience to your online content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+              </TabsContent>
+              <TabsContent value="specs">
+                <div className="prose max-w-none space-y-4">
+                  {/* <p>Specs content goes here.</p> */}
+                </div>
+              </TabsContent>
+            </Tabs>
           </div>
         </section>
-        <ShortURL />
+
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-xl font-extrabold mb-8 text-center">Embraced by both large enterprises and small businesses globally.</h2>
           <div className="flex sm:space-x-0 justify-center align-middle lg:flex-row md:flex-row sm:flex-initial  space-x-2 mb-32">
@@ -145,43 +211,43 @@ export function Component() {
         <Testimonial />
         <section className="container mx-auto px-4 py-16">
           <h2 className="text-3xl font-bold mb-16 text-center">Frequently asked questions</h2>
-            <div className="space-y-9 lg:space-x-80 md:space-x-40">
-              <details>
-                <summary className="font-bold cursor-pointer">What is a URL shortener?</summary>
-                <p>
-                  A URL shortener is a tool that creates a short, unique URL that will redirect to the specified webpage
-                  when accessed.
-                </p>
-              </details>
-              <details>
-                <summary className="font-bold cursor-pointer">What is a custom URL shortener?</summary>
-                <p>
-                  A custom URL shortener allows you to brand your short links with your chosen domain name, providing a
-                  consistent identity for your links.
-                </p>
-              </details>
-              <details>
-                <summary className="font-bold cursor-pointer">What is a QR Code?</summary>
-                <p>
-                  A QR Code is a two-dimensional barcode that can be scanned using a smartphone camera to quickly access a
-                  webpage or app.
-                </p>
-              </details>
-              <details>
-                <summary className="font-bold cursor-pointer">What is a Link-in-bio?</summary>
-                <p>
-                  A Link-in-bio is a single link that directs followers to a curated page with multiple links, often used
-                  on social media profiles.
-                </p>
-              </details>
-              <details>
-                <summary className="font-bold cursor-pointer">Why choose SnapshortURL?</summary>
-                <p>
-                  SnapshortURL offers robust link management features, detailed analytics, and a wide range of integrations,
-                  making it a top choice for businesses and individuals.
-                </p>
-              </details>
-            </div>
+          <div className="space-y-9 lg:space-x-80 md:space-x-40">
+            <details>
+              <summary className="font-bold cursor-pointer">What is a URL shortener?</summary>
+              <p>
+                A URL shortener is a tool that creates a short, unique URL that will redirect to the specified webpage
+                when accessed.
+              </p>
+            </details>
+            <details>
+              <summary className="font-bold cursor-pointer">What is a custom URL shortener?</summary>
+              <p>
+                A custom URL shortener allows you to brand your short links with your chosen domain name, providing a
+                consistent identity for your links.
+              </p>
+            </details>
+            <details>
+              <summary className="font-bold cursor-pointer">What is a QR Code?</summary>
+              <p>
+                A QR Code is a two-dimensional barcode that can be scanned using a smartphone camera to quickly access a
+                webpage or app.
+              </p>
+            </details>
+            <details>
+              <summary className="font-bold cursor-pointer">What is a Link-in-bio?</summary>
+              <p>
+                A Link-in-bio is a single link that directs followers to a curated page with multiple links, often used
+                on social media profiles.
+              </p>
+            </details>
+            <details>
+              <summary className="font-bold cursor-pointer">Why choose SnapshortURL?</summary>
+              <p>
+                SnapshortURL offers robust link management features, detailed analytics, and a wide range of integrations,
+                making it a top choice for businesses and individuals.
+              </p>
+            </details>
+          </div>
         </section>
         <section className="bg-primary text-white py-16">
           <div className="container mx-auto px-4 text-center">
@@ -196,3 +262,22 @@ export function Component() {
 
 
 
+
+function CheckIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polyline points="20 6 9 17 4 12" />
+    </svg>
+  )
+}
