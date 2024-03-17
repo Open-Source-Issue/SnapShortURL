@@ -14,7 +14,7 @@ async function handleShortURLGenrated(req, res) {
         redirectURL: body.URL,
         VisitedHistory: []
     })
-
+ 
     return res.json({ id: shortID })
 }
 
