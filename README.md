@@ -27,7 +27,7 @@ SnapShortURL is an open-source URL shortening platform designed for simplicity a
 3. Install dependencies and start the application.
    ```bash
    npm install
-   npm start
+   npm run dev
    ```
 
 4. Access the application at [http://localhost:3000](http://localhost:3000).
