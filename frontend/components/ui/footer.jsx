@@ -23,7 +23,7 @@ export default function Component() {
                     <p className="text-sm">Follow us:</p>
                     <div className="flex space-x-4 mt-2">
                         <XIcon className="h-6 w-6" />
-                        <Github className="h-6 w-6" />
+                        <a href="https://github.com/ianujvarshney" target="_blank" rel="noopener noreferrer"><Github className="h-6 w-6" /></a>
                         <FacebookIcon className="h-6 w-6" />
                         <YoutubeIcon className="h-6 w-6" />
                         <InstagramIcon className="h-6 w-6" />
