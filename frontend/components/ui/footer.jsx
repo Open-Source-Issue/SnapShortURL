@@ -62,7 +62,7 @@ export default function Component() {
                     <h3 className="font-semibold mb-3">Resources</h3>
 
                     <ul>
-                        <li className="mb-2">Blog</li>
+                        <li className="mb-2"><a href="/blog">Blog</a></li>
                         <li className="mb-2">Resource Library</li>
                         <li className="mb-2">Developers</li>
                         <li className="mb-2">App Connectors</li>
