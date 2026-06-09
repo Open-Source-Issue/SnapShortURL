@@ -6,8 +6,8 @@ export default function Component() {
     <div key="1" className="bg-white text-gray-700 pt-10">
       <main>
         <section className="container mx-auto px-4 py-16 text-center">
-          <h1 className="text-5xl font-bold mb-4 text-primary">Resources</h1>
-          <p className="mb-8">Explore our range of resources. Learn more about our products and how to use them.</p>
+          <h1 className="text-5xl font-bold mb-4 text-primary">Resource Library</h1>
+          <p className="mb-8">Explore our Resource Library for guides, tutorials, and FAQs about SnapshortURL.</p>
         </section>
         <section className="container mx-auto px-4 py-16">
           <div className="lg:ml-32 lg:mr-32 grid grid-cols-1 lg:grid-cols-3 gap-8">
