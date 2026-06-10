@@ -1,3 +1,4 @@
+import Link from "next/link"
 import Image from "next/image"
 
 export default function Component() {
@@ -64,7 +65,7 @@ export default function Component() {
                     <ul>
                         <li className="mb-2"><a href="/blog">Blog</a></li>
                         <li className="mb-2"><a href="/resources">Resource Library</a></li>
-                        <li className="mb-2">Developers</li>
+                        <li className="mb-2"><Link href="/developers">Developers</Link></li>
                         <li className="mb-2">App Connectors</li>
                         <li className="mb-2"><a href="/support">Support</a></li>
                         <li className="mb-2"><a href="/trustcenter">Trust Center</a></li>
