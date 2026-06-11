@@ -66,7 +66,7 @@ export default function Component() {
                         <li className="mb-2"><a href="/blog">Blog</a></li>
                         <li className="mb-2"><a href="/resources">Resource Library</a></li>
                         <li className="mb-2"><Link href="/developers">Developers</Link></li>
-                        <li className="mb-2">App Connectors</li>
+                        <li className="mb-2"><Link href="/app-connectors">App Connectors</Link></li>
                         <li className="mb-2"><a href="/support">Support</a></li>
                         <li className="mb-2"><a href="/trustcenter">Trust Center</a></li>
                         <li className="mb-2">Browser Extension</li>
