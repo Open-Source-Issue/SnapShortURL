@@ -53,7 +53,7 @@ export default function Component() {
                     <h3 className="font-semibold mb-3">Features</h3>
                     <ul>
 
-                        <li className="mb-2">Branded Links</li>
+                        <li className="mb-2"><a href="/branded-links">Branded Links</a></li>
                         <li className="mb-2"><a href="/mobile-app">Mobile App</a></li>
                         <li className="mb-2">Campaign Management & Analytics</li>
                     </ul>
