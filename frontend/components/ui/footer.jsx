@@ -8,18 +8,17 @@ export default function Component() {
                 <div>
                     <h2 className="lg:text-2xl md:text-2xl font-bold mb-2 sm:text-xl">SnapshortURL</h2>
                     <p className="mb-4">Streamlined URL Shortening for the Modern Web</p>
-                    <a href="/">
-                    <Image
-                        alt="Great Place to Work Certified"
-                        className="mb-6 pl-0"
-                        height="200"
-                        src="/SnapshortURL.svg"
-                        style={{
-                            aspectRatio: "120/40",
-                            objectFit: "cover",
-                        }}
-                        width="200"
-                    />
+                    <a href="/" aria-label="SnapshortURL homepage">
+                        <Image
+                            alt="SnapshortURL logo"
+                            className="mb-6 pl-0"
+                            width={120}
+                            height={40}
+                            src="/SnapshortURL.svg"
+                            style={{
+                                objectFit: "cover",
+                            }}
+                        />
                     </a>
                     <p className="text-sm">Follow us:</p>
                     <div className="flex space-x-4 mt-2">
