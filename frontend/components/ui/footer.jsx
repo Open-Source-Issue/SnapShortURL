@@ -8,18 +8,17 @@ export default function Component() {
                 <div>
                     <h2 className="lg:text-2xl md:text-2xl font-bold mb-2 sm:text-xl">SnapshortURL</h2>
                     <p className="mb-4">Streamlined URL Shortening for the Modern Web</p>
-                    <a href="/">
-                    <Image
-                        alt="Great Place to Work Certified"
-                        className="mb-6 pl-0"
-                        height="200"
-                        src="/SnapshortURL.svg"
-                        style={{
-                            aspectRatio: "120/40",
-                            objectFit: "cover",
-                        }}
-                        width="200"
-                    />
+                    <a href="/" aria-label="SnapshortURL homepage">
+                        <Image
+                            alt="SnapshortURL logo"
+                            className="mb-6 pl-0"
+                            width={120}
+                            height={40}
+                            src="/SnapshortURL.svg"
+                            style={{
+                                objectFit: "cover",
+                            }}
+                        />
                     </a>
                     <p className="text-sm">Follow us:</p>
                     <div className="flex space-x-4 mt-2">
@@ -48,13 +47,13 @@ export default function Component() {
                         <li className="mb-2">Customer Service For Developers</li>
                     </ul>
                 </div>
-
+                        
                 <div>
                     <h3 className="font-semibold mb-3">Features</h3>
                     <ul>
 
-                        <li className="mb-2">Branded Links</li>
-                        <li className="mb-2">Mobile Links</li>
+                        <li className="mb-2"><a href="/branded-links">Branded Links</a></li>
+                        <li className="mb-2"><a href="/mobile-app">Mobile App</a></li>
                         <li className="mb-2">Campaign Management & Analytics</li>
                     </ul>
                 </div>
@@ -68,8 +67,8 @@ export default function Component() {
                         <li className="mb-2"><Link href="/developers">Developers</Link></li>
                         <li className="mb-2"><Link href="/app-connectors">App Connectors</Link></li>
                         <li className="mb-2"><a href="/support">Support</a></li>
-                        <li className="mb-2"><a href="/trustcenter">Trust Center</a></li>
-                        <li className="mb-2">Browser Extension</li>
+                        <li className="mb-2"><Link href="/trustcenter">Trust Center</Link></li>
+                        <li className="mb-2"><Link href="/browser-extension">Browser Extension</Link></li>
                         <li className="mb-2">Mobile App</li>
                     </ul>
 
@@ -81,7 +80,7 @@ export default function Component() {
                         <li className="mb-2"><a href="/career">Careers</a></li>
                         <li className="mb-2">Diversity & Inclusion</li>
                         <li className="mb-2"><a href="/partner">Partners</a></li>
-                        <li className="mb-2">Press</li>
+                        <li className="mb-2"><a href="/press">Press</a></li>
                         <li className="mb-2"><a href="/contactus">Contact</a></li>
                         <li className="mb-2"><a href="/review">Reviews</a></li>
                     </ul>
