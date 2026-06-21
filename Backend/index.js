@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const URLRoutes = require('./Routes/SnapShortURL.Route');
+const PressRoutes = require('./Routes/Press.Route');
 const { connecttoMongoDB } = require('./connect')
 require('dotenv').config();
 const PORT = process.env.PORT || 3005;
@@ -22,6 +23,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/url', URLRoutes)
+app.use('/press', PressRoutes)
 
 app.use('/signup', async (req, res) => {
     const data = {
