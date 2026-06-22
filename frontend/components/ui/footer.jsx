@@ -69,7 +69,7 @@ export default function Component() {
                         <li className="mb-2"><a href="/support">Support</a></li>
                         <li className="mb-2"><Link href="/trustcenter">Trust Center</Link></li>
                         <li className="mb-2"><Link href="/browser-extension">Browser Extension</Link></li>
-                        <li className="mb-2">Mobile App</li>
+                        <li className="mb-2"><Link href="/mobile-app">Mobile App</Link></li>
                     </ul>
 
                 </div>
@@ -80,7 +80,7 @@ export default function Component() {
                         <li className="mb-2"><a href="/career">Careers</a></li>
                         <li className="mb-2">Diversity & Inclusion</li>
                         <li className="mb-2"><a href="/partner">Partners</a></li>
-                        <li className="mb-2">Press</li>
+                        <li className="mb-2"><a href="/press">Press</a></li>
                         <li className="mb-2"><a href="/contactus">Contact</a></li>
                         <li className="mb-2"><a href="/review">Reviews</a></li>
                     </ul>
