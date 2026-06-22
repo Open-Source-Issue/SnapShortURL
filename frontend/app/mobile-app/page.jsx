@@ -1,32 +1,33 @@
 import Link from 'next/link'
-import { ArrowRight, BadgeCheck, Globe, LockKeyhole, Phone, ShieldCheck, Smartphone, Sparkles } from 'lucide-react'
+import { ArrowRight, BadgeCheck, Globe, LockKeyhole, ShieldCheck, Smartphone, Sparkles } from 'lucide-react'
+import { Button } from '@/components/ui/button'
 
 const appCards = [
   {
     icon: Smartphone,
     title: 'Create links from anywhere',
-    description: 'Create short links quickly from your own mobile device when you are away from your desk.',
+    description: 'Shorten URLs, brand links, and publish them instantly from your phone.',
   },
   {
     icon: ShieldCheck,
-    title: 'Monitor metrics',
-    description: 'Keep an eye on link performance so you can understand what is working.',
+    title: 'Monitor link performance',
+    description: 'See clicks and engagement in real time so you can act on what works.',
   },
   {
     icon: LockKeyhole,
-    title: 'Copy and connect',
-    description: 'Tap, copy, and share a link with fewer steps and less friction.',
+    title: 'Copy and connect instantly',
+    description: 'Tap to copy a short link and share it across apps without extra steps.',
   },
 ]
 
 const appSections = [
   {
     title: 'Google Play | Android',
-    body: 'Create your links from anywhere with the SnapshortURL Android app.',
+    body: 'Install the SnapshortURL Android app to shorten and share links on the go.',
   },
   {
     title: 'App Store | iOS',
-    body: 'Create your links from anywhere with the SnapshortURL iOS app.',
+    body: 'Install the SnapshortURL iOS app to manage links from your phone wherever you are.',
   },
 ]
 
@@ -55,24 +56,18 @@ export default function MobileAppPage() {
                   Get SnapshortURL on your phone
                 </h1>
                 <p className="max-w-2xl text-lg leading-8 text-gray-700">
-                  Create and share short links faster from anywhere with a mobile experience that feels native to the
-                  rest of the site.
+                  Create and share short links faster from anywhere with the SnapshortURL mobile experience.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row">
-                <Link
-                  href="/support"
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-primary/20 transition hover:translate-y-[-1px]"
-                >
-                  Ask for help
-                  <ArrowRight className="h-4 w-4" />
-                </Link>
-                <Link
-                  href="/developers"
-                  className="inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 text-sm font-semibold text-gray-900 transition hover:border-primary/30 hover:text-primary"
-                >
-                  Visit developers
-                </Link>
+                <Button asChild className="min-w-[200px]">
+                  <a href="https://github.com/Open-Source-Issue/SnapShortURL" target="_blank" rel="noreferrer">
+                    View GitHub repository
+                  </a>
+                </Button>
+                <Button asChild variant="outline" className="min-w-[200px]">
+                  <a href="/support">Contact support</a>
+                </Button>
               </div>
             </div>
 
@@ -85,18 +80,18 @@ export default function MobileAppPage() {
                 <div className="space-y-4">
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                     <p className="text-xs uppercase tracking-[0.22em] text-white/50">Best for</p>
-                    <p className="mt-2 text-sm text-white/90">Creating and sharing links from your mobile device</p>
+                    <p className="mt-2 text-sm text-white/90">Link creation and sharing from mobile devices</p>
                   </div>
                   <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
                     <p className="text-xs uppercase tracking-[0.22em] text-white/50">Experience</p>
-                    <p className="mt-2 text-sm text-white/90">Fast, focused, and easy to use on the go</p>
+                    <p className="mt-2 text-sm text-white/90">Fast, intuitive, and made for today’s workflows</p>
                   </div>
                 </div>
               </div>
               <div className="mt-5 grid gap-4 sm:grid-cols-2">
                 <div className="rounded-2xl border border-gray-200 bg-white p-4">
                   <p className="text-sm font-medium text-gray-500">Audience</p>
-                  <p className="mt-2 text-lg font-semibold">Mobile users</p>
+                  <p className="mt-2 text-lg font-semibold">Mobile teams</p>
                 </div>
                 <div className="rounded-2xl border border-gray-200 bg-white p-4">
                   <p className="text-sm font-medium text-gray-500">Goal</p>
@@ -113,8 +108,7 @@ export default function MobileAppPage() {
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary">Mobile features</p>
               <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Create and share powerful links</h2>
               <p className="text-gray-700">
-                Keep the page focused on the mobile app basics: shorten links, monitor metrics, and copy and connect
-                from the palm of your hand.
+                Access the most important link workflows on mobile: shortening, monitoring, and sharing with speed.
               </p>
             </div>
 
@@ -142,9 +136,9 @@ export default function MobileAppPage() {
           <div className="grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
             <div className="rounded-3xl bg-primary/10 p-8">
               <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary">Mobile apps</p>
-              <h2 className="mt-3 text-3xl font-bold tracking-tight">Create and share your links from your own mobile device</h2>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight">Install the right SnapshortURL app for your device</h2>
               <p className="mt-4 leading-7 text-gray-700">
-                A mobile app page should explain the value quickly and help users find the right app for their device.
+                Choose the app version that fits your workflow and keep link creation just a tap away.
               </p>
               <ul className="mt-8 space-y-4">
                 {appSections.map((item) => (
@@ -164,7 +158,7 @@ export default function MobileAppPage() {
                     <div>
                       <h3 className="text-xl font-semibold">{item}</h3>
                       <p className="mt-3 text-sm leading-7 text-gray-700">
-                        Helpful guidance for people who want to use the mobile app with less friction.
+                        Guidance designed to help mobile users get started quickly and stay productive.
                       </p>
                     </div>
                   </div>
@@ -179,10 +173,9 @@ export default function MobileAppPage() {
             <div className="grid gap-6 rounded-3xl border border-gray-200 bg-white p-6 md:grid-cols-[1fr_1fr] md:p-8">
               <div className="space-y-4">
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-primary">Need help now?</p>
-                <h2 className="text-3xl font-bold tracking-tight">Keep the app easy to use</h2>
+                <h2 className="text-3xl font-bold tracking-tight">Keep your mobile workflow simple</h2>
                 <p className="max-w-xl text-sm leading-7 text-gray-700">
-                  The mobile app should feel like a natural extension of the product, with clear support paths and
-                  simple instructions.
+                  The SnapshortURL mobile experience should be easy to use, with clear support links and quick setup steps.
                 </p>
                 <Link
                   href="/support"
