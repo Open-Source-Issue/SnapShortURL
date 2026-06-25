@@ -43,7 +43,7 @@ export default function Component() {
 
                     <ul>
                         <li className="mb-2"><a href="/social">Social Media</a></li>
-                        <li className="mb-2">Digital Marketing</li>
+                        <li className="mb-2"><a href="/digital-marketing">Digital Marketing</a></li>
                         <li className="mb-2">Customer Service For Developers</li>
                     </ul>
                 </div>
